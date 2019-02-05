@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+   ftpproxy:
+        image: shogoki/delegate-reverse-ftp:latest
+        networks:
+                 - ftp
+        
+        ports:
+                 - "21:21"
+                 - "30000-30009:30000-30009"
+
+        restart: always
+
+networks:
+   ftp:
+        external:
+                 name: webproxy

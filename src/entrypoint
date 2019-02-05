@@ -1,0 +1,2 @@
+#!/bin/bash
+/usr/bin/delegate -P21 SERVER=ftp  ADMIN="mail@admin.local" RELIABLE="*" LOGDIR=/var/log SRCIF="*:0:ftp-data" PERMIT="ftp:*:*" -r -f
