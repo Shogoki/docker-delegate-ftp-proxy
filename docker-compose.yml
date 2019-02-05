@@ -2,7 +2,7 @@ version: '3'
 
 services:
    ftpproxy:
-        image: shogoki/delegate-reverse-ftp:latest
+        image: shogoki/delegate-ftp-proxy:latest
         networks:
                  - ftp
         
