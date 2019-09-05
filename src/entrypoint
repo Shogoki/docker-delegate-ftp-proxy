@@ -1,2 +1,3 @@
-#!/bin/bash
+#!/bin/sh
+ls /usr/lib/libstd*
 /usr/bin/delegate -P21 SERVER=ftp  ADMIN="mail@admin.local" RELIABLE="*" LOGDIR=/dev/stdout SRCIF="*:0:ftp-data" PERMIT="ftp:*:*"  SRCIF="*:30000-30009:ftp-data-pasv" -r -f
