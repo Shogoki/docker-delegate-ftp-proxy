@@ -2,6 +2,7 @@ version: '3'
 
 services:
    ftpproxy:
+        build: ./src
         image: shogoki/delegate-ftp-proxy:latest
         networks:
                  - ftp
